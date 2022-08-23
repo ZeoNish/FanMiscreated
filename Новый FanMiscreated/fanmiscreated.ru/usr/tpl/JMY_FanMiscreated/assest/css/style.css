@@ -1,0 +1,655 @@
+@font-face {
+	font-family: 'BebasNeueRegular';
+	src: url('../fonts/BebasNeueRegular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'BebasNeueBold';
+	src: url('../fonts/BebasNeueBold.ttf') format('truetype');
+}
+
+body {
+    background: #222222 url(../images/pageBG.png) left top repeat;
+	margin: 0;
+	padding: 0;
+}
+a { 
+    text-decoration: none; /* Отменяем подчеркивание у ссылки */
+   } 
+.center {text-align: center;}
+.main {
+    width: 1170px;
+    margin: 0px auto;
+    /* background-color: #222222; */
+    position: relative;
+    display: block;
+	/* left: 25px; */
+	z-index: 999;
+}
+.head {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    display: block;
+	font-family: BebasNeueBold;
+}
+.menu {
+    height: 50px;
+    width: 100%;
+    position: relative;
+    display: block;
+	font-family: BebasNeueBold;
+}
+.panel {
+    position: relative;
+    float: right;
+    width: 300px;
+    height: 44px;
+    background-color: #f2f2f2;
+    right: 12px;
+	overflow: hidden;
+}
+.logo {
+    position: absolute;
+    width: 810px;
+    height: 80px;
+    left: 30px;
+    top: 80px;
+	font-family: BebasNeueBold;
+}
+.logo span {
+    float: right;
+    position: absolute;
+    top: 30px;
+    margin-left: 30px;
+    color: whitesmoke;
+    font-size: 24px;
+}
+.content {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    min-height: 700px;
+}
+.page_changer {
+    position: initial;
+    display: block;
+    width: 400px;
+    height: 30px;
+    background-color: brown;
+    margin: 0 auto;
+	z-index: 999;
+}
+.footer {
+    position: relative;
+    width: 100%;
+    display: block;
+    /* background-color: #222222; */
+    height: 150px;
+	font-family: BebasNeueBold;
+}
+.up {
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    background-color: whitesmoke;
+    left: -50px;
+	display: none;
+	cursor: pointer;
+	opacity: 0.2;
+}
+.up a {
+    position: fixed;
+    top: 50%;
+    font-size: 80px;
+    background-image: url('../images/arrow.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+}
+.bgbg {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    height: 350px;
+    z-index: 0;
+}
+.buy {
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    background-color: #8BC34A;
+    color: whitesmoke;
+    padding: 8px;
+    text-align: center;
+    line-height: 30px;
+    right: 0px;
+    top: 98px;
+	font-size: 20px;
+}
+.buy:hover {background-color: #F44336;}
+.soc_panel {
+    width: 220px;
+    height: 40px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+	text-align: right;
+}
+.soc_panel a img {
+	width: 40px;
+    margin-right: 2px;
+    border: 2px solid transparent;
+}
+.soc_panel a img:hover {border-bottom: 2px solid #8BC34A;}
+.ea_steam {
+    position: absolute;
+    background-image: url(../images/early_access_banner_russian.png);
+    top: 0px;
+    width: 120px;
+    height: 120px;
+    opacity: 1!important;
+	z-index: 999;
+}
+.left_content {
+    position: relative;
+    display: block;
+	float: left;
+	width: 820px;
+	/* background-color: #f2f2f2; */
+	top: 10px;
+}
+
+.left_full_content {
+    background-color: #f2f2f2;
+    min-height: 580px;
+    font-family: BebasNeueBold;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.content_full_all {
+	position: relative;
+    display: inline-block;
+    width: 100%;
+    min-height: 580px;
+    background-color: #f2f2f2;
+    top: 10px;	
+}
+
+.right_content {
+	position: relative;
+    display: block;
+    float: right;
+    width: 340px;
+    min-height: 200px;
+	top: 10px;
+	font-family: BebasNeueBold;
+}
+.sidebar_block {
+    width: 340px;
+    background-color: #f2f2f2;
+    min-height: 300px;
+    margin-bottom: 10px;
+}
+.s_b_header {
+	position: relative;
+    width: 100%;
+    height: 40px;
+    background-color: #2196F3;
+    color: white;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+.s_b_content {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+}
+
+.src_img img {
+    margin: 6px 3px;
+    position: relative;
+    width: 60px;
+    height: 60px;
+	max-width: 60px;
+    max-height: 60px;
+}
+
+.src_img img:hover {    opacity: 0.8;}
+
+.post {
+    position: relative;
+    width: 100%;
+	border-bottom: 1px solid #e4e4e4;
+	padding-bottom: 20px;
+	padding-top: 10px;
+    min-height: 500px;
+	font-family: BebasNeueBold;
+	margin-bottom: 8px;
+	background-color: #f2f2f2;
+}
+.post_header {
+    display: block;
+    position: relative;
+    text-align: center;
+    font-size: 28px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+	color: #000;
+}
+.post_header:hover {color: #c73c35;}
+.post_poster,.post_poster img {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+.post_poster img:hover {opacity: 0.9;}
+
+.post_date {
+    float: left;
+    position: relative;
+    display: block;
+    left: 8px;
+    bottom: 5px;
+    background-color: rgba(128, 128, 128, 0.35);
+    padding: 5px 10px;
+}
+.post_group {
+    float: left;
+    position: relative;
+    display: block;
+    left: 4px;
+    bottom: 5px;
+    background-color: rgba(128, 128, 128, 0.35);
+    padding: 5px 10px;
+}
+.post_view {
+    float: right;
+    position: relative;
+    display: block;
+    right: 4px;
+    bottom: 5px;
+    background-color: rgba(128, 128, 128, 0.35);
+    padding: 5px 10px;
+}
+.post_info {
+    position: relative;
+    display: block;
+    padding: 10px 10px;
+}
+.post_read {
+    width: 100px;
+    height: 30px;
+    background-color: #e8554e;
+    margin: 0 auto;
+    color: whitesmoke;
+    line-height: 30px;
+    text-align: center;
+}
+.post_read:hover {background-color: #c73c35;}
+.f_left {
+    position: relative;
+    display: block;
+    float: left;
+    width: 50%;
+    height: 150px;
+}
+.f_mini_logo {
+    position: relative;
+    width: 200px;
+    height: 44px;
+    left: 25px;
+    top: 30px;
+}
+.f_right {
+    position: relative;
+    display: block;
+    float: right;
+    width: 50%;
+    height: 150px;
+}
+.f_l_info {
+    position: relative;
+    width: 100%;
+    height: 44px;
+    left: 25px;
+    top: 40px;
+    color: white;
+}
+.f_l_info span{
+	float: left;
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.f_l_info span a{ color: brown; }
+
+.ava_img {
+	position: relative;
+    width: 44px;
+    height: 44px;
+    margin-right: 5px;
+}
+
+.nick_name {
+    font-size: 26px;
+    position: absolute;
+    top: 0px;
+    color: #2196F3;
+    width: 202px;
+    overflow: hidden;
+    line-height: 44px;
+}
+
+.login {
+	position: absolute;
+	right: 0;
+    float: right;
+    background-color: #8BC34A;
+    background-image: url(../images/login.png);
+    width: 44px;
+    height: 44px;
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+}
+.login:hover {background-color: #7aa547;}
+
+.logout {
+	position: relative;
+    float: right;
+    background-color: #F44336;
+    background-image: url(../images/logout.png);
+    width: 44px;
+    height: 44px;
+    background-repeat: no-repeat;
+    background-position: 8px 6px;
+}
+.logout:hover {background-color: #dc3d31;}
+.PM {
+	position: absolute;
+    right: 47px;
+    top: 2px;
+    text-align: left;
+    border: 1px solid #2196F3;
+    padding: 3px;
+	color: #f33621;
+}
+.AD {
+	position: absolute;
+    right: 47px;
+    bottom: 0px;
+    text-align: left;
+	color: #f33621;
+}
+.post_rating {
+    position: absolute;
+    right: 0px;
+    top: 5px;
+}
+.rating_layer {
+	    font-size: 30px!important;
+}
+img._pointer {
+    bottom: 9px;
+    position: relative;
+    margin: 8px;
+}
+.post_full_content {
+    padding-right: 20px;
+	font-family: BebasNeueRegular;
+    font-size: 20px;
+	padding: 0px 10px;
+}
+
+.post_id {
+    position: relative;
+    float: right;
+    right: 10px;
+    width: 20%;
+    text-align: right;
+}
+
+
+
+/* Комменты */
+#commentBox {
+
+    margin-top: 15px;
+    padding: 15px;
+}
+.content_left_comments_panel {
+    position: relative;
+ 
+    display: block;
+    height: 40px;
+    margin: 10px 0 10px 0px;
+}
+.content_left_comments_panel a {
+	color: #000000;
+    font-family: BebasNeueRegular;
+    font-weight: normal;
+    font-size: 30px;
+    position: relative;
+    top: 4px;
+    left: 14px;
+}
+.content_left_comments_panel  span {
+    position: absolute;
+    top: 9px;
+    right: 14px;
+}
+.content_left_comments_panel  span::before {
+	color: #000000;
+    font-weight: normal;
+    font-size: 20px;
+}
+.content_left_comments {
+width: 100%;
+    overflow: hidden;
+    min-height: 50px;
+    padding: 0px;
+}
+
+.one_comment {
+    min-height: 105px;
+    margin-bottom: 10px;
+	float: left;
+    width: 100%;
+}
+.level_1 {}
+.level_2 {}
+.comment_ava {
+	position: relative;
+    top: 10px;
+    left: 0px;
+    background-color: whitesmoke;
+    width: 67px;
+    height: 67px;
+    border: 5px solid #fff;
+    border-radius: 0px;
+    overflow: hidden;
+	float: left;
+}
+.comment_ava  img {
+    width: 67px;
+    height: 67px;
+}
+.comment_messag {
+    top: 5px;
+    background-color: #fff;
+    min-height: 100px;
+    width: 100%;
+    float: right;
+    position: relative;
+    max-width: 688px;
+    padding: 4px 3px 2px 2px;
+}
+.comment_messag:before {
+position: absolute;
+    content: '';
+    left: -30px;
+    top: 18px;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-right: 15px solid #fff;
+}
+
+.comment_form {
+	position: relative;
+    min-height: 200px;
+	margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.comment_form_paste {
+    padding: 5px 15px;
+    background-color: #2196f3;
+    color: #fff;
+    font-family: BebasNeueBold;
+    font-size: 20px;
+    text-decoration: none;
+    width: 140px;
+    text-align: center;
+    position: relative;
+    left: 78%;
+    bottom: 0px;
+    cursor: pointer;
+}
+.comment_form_paste a {text-decoration: none; color: #fff;}
+
+.user_write_name {
+    position: relative;
+    float: left;
+    left: 5px;
+    top: 0px;
+    color: #000000;
+    font-family: BebasNeueBold;
+    font-weight: normal;
+    font-size: 16px;
+}
+.user_write_name a {
+	color: #A8BCD7;
+    font-family: BebasNeueBold;
+    font-weight: normal;
+    font-size: 20px;
+    text-decoration: none;
+}
+.user_write_date {
+    position: relative;
+    float: right;
+    right: 5px;
+    top: 0px;
+	    font-family: BebasNeueBold;
+    font-weight: normal;
+	font-size: 16px;
+}
+.user_write_text {
+    position: relative;
+    float: left;
+    font-size: 16px;
+    font-family: 'NeoSansCyr-Regular', sans-serif;
+    width: 720px;
+    padding: 4px 15px;
+}
+.comment_reply {
+    position: relative;
+    /* height: 25px; */
+    width: 100%;
+    bottom: 0px;
+	font-family: BebasNeueBold;
+    font-weight: normal;
+    font-size: 16px;
+	    right: 15px;
+	
+}
+.comment_reply a {
+	text-decoration: none;
+    color: #A8BCD7;
+    float: right;
+	margin-bottom: 10px;
+}
+
+/*------------------------------------*\
+	НАВИГАЦИЯ
+\*------------------------------------*/
+#nav{
+    float: left;
+    width: 100%;
+    list-style: none;
+    font-weight: bold;
+    margin-bottom: 10px;
+    bottom: 12px;
+    position: relative;
+    z-index: 999;
+    margin: 18px 0px 0px -28px;
+}
+#nav li{
+	float:left;
+	margin-right:10px;
+	position:relative;
+	display:block;
+	font-size: 32px;
+}
+#nav li a{
+	display:block;
+	padding:5px;
+	color:#fff;
+	background:#333;
+	text-decoration:none;
+	
+	text-shadow:1px 1px 1px rgba(0,0,0,0.75); /* Тень текста, чтобы приподнять его на немного */
+/* 	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	border-radius:2px; */
+}
+#nav li a:hover{
+	color:#fff;
+	background:#6b0c36;
+	background:rgba(107,12,54,0.75); /* Выглядит полупрозрачным */
+	text-decoration:none;
+}
+
+/*--- ВЫПАДАЮЩИЕ ПУНКТЫ ---*/
+#nav ul{
+	list-style:none;
+	position:absolute;
+	left:-9999px; /* Скрываем за экраном, когда не нужно (данный метод лучше, чем display:none;) */
+	opacity:0; /* Устнавливаем начальное состояние прозрачности */
+	-webkit-transition:0.25s linear opacity; /* В Webkit выпадающие пункты будут проявляться */
+	padding: 0px;
+}
+#nav ul li{
+	padding-top:1px; /* Вводим отступ между li чтобы создать иллюзию разделенных пунктов меню */
+	float:none;
+}
+#nav ul a{
+	white-space:nowrap; /* Останавливаем перенос текста и создаем многострочный выпадающий пункт */
+	display:block;
+}
+#nav li:hover ul{ /* Выводим выпадающий пункт при наведении курсора */
+	left:0; /* Приносим его обратно на экран, когда нужно */
+	opacity:1; /* Делаем непрозрачным */
+}
+#nav li:hover a{ /* Устанавливаем стили для верхнего уровня, когда выводится выпадающий список */
+	background:#6b0c36;
+	background:rgba(107, 12, 12, 0.75); /* Выглядит полупрозрачным */
+	text-decoration:none;
+}
+#nav li:hover ul a{ /* Изменяем некоторые стили верхнего уровня при выводе выпадающего пункта */
+	text-decoration:none;
+	-webkit-transition:-webkit-transform 0.075s linear;
+}
+#nav li:hover ul li a:hover{ /* Устанавливаем стили для выпадающих пунктов, когда курсор наводится на конкретный пункт */
+	background:#333;
+	background:rgba(51,51,51,0.75); /* Будет полупрозрачным */
+	text-decoration:none;
+	-moz-transform:scale(1.05);
+	-webkit-transform:scale(1.05);
+}
